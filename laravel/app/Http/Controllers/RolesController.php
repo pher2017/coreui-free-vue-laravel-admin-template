@@ -98,7 +98,7 @@ class RolesController extends Controller
         $roleHierarchy->role_id = $role->id;
         $roleHierarchy->hierarchy = $hierarchy;
         $roleHierarchy->save();
-        //$request->session()->flash('message', 'Successfully created role');
+        $request->session()->flash('message', 'Successfully created role');
         return response()->json( ['status' => 'success'] );
     }
 
