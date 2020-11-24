@@ -14,3 +14,6 @@
 //Route::get('/{any}', function () {
 //    return view('coreui.homepage');
 //})->where('any', '.*');
+Route::get('/{any}', function () {
+    return view('coreui.homepage');
+})->where('any', '.*');
